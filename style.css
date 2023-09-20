@@ -9,6 +9,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     font-family: Arial, sans-serif;
+    padding: 0 20px; /* Adjust the padding as needed */
 }
 
 /* Style the header section */
@@ -56,3 +57,16 @@ li {
 li:hover {
     background-color: #f4f4f4;
 }
+
+/* Add this to your style.css file */
+.small-image {
+    max-width: calc(30% - 10px); /* Make each image one-third of the available space minus margin */
+    height: auto;                   /* Maintain image aspect ratio */
+    display: inline-block;          /* Display images inline */
+    margin: 10px;                   /* Add some spacing between images */
+    box-sizing: border-box;         /* Include margin in the image width calculation */
+    border: 2px solid #000;         /* Add a 2px solid black border around the images */
+}
+
+
+
