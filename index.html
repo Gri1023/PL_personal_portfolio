@@ -19,30 +19,32 @@
         </nav>
     </header>
 
-    <section id="about-me">
+<section id="about-me">
     <h2>About Me</h2>
-    <div style="display: flex;">
-        <div style="flex: 1;">
+    <div class="about-me-content">
+        <div class="about-me-text">
             <p>My full name is Hryhorii Bavykin, but everybody calls me Grisha. Right now I am studying at European Studies 4 year programme at The Hague University of Applied Sciences. My favourite subject is Political Challenges, since I really like history, geography and modern politics. In my free time, I like to code (for ex. this website or my computer game), go for a walk or write something about politics or other topics for my <a href="https://t.me/grycko_the_hague_couloir">personal Telegram chanell</a>, where I also use my photo and video-editing skills, which are still pretty basic, but not too bad.</p>
         </div>
-        <div style="flex: 1;">
-            <img src="images/IMG_20231005_183159_470.jpg" alt="Grisha's Selfie" style="max-width: 100%;">
+        <div class="about-me-image">
+            <img src="images/IMG_20231005_183159_470.jpg" alt="Grisha's Selfie">
         </div>
     </div>
 </section>
 
 
+
     <section id="goals">
         <h2>Goals for Semester 2</h2>
-        <p>My personal goals for semester 2 are: </p> 
-        <p>- become more efficient in time management </p> 
-        <p>- start going to some sports (for example swimming pool) </p> 
-        <p>- make new friends? </p> 
+        <p>My personal goals for semester 2 are: </p>
+        <p>- become more efficient in time management </p>
+        <p>- start going to some sports (for example swimming pool) </p>
+        <p>- make new friends? </p>
         <p>- become better at chess, start playing online and get a rating</p>
     </section>
 
     <section id="reflections">
         <h2>Reflection Assignments</h2>
+        <p> No reflection assignments here yet(((</p>
         <!-- Add your reflection content here -->
     </section>
 
@@ -55,7 +57,7 @@
             <img class="small-image" src="images/IMG_20230907_183611.jpg" alt="Image 2 for Assignment 1">
             <img class="small-image" src="images/IMG_20230907_183617.jpg" alt="Image 3 for Assignment 1">
         </div>
-        
+
         <div class="assignment">
             <h3>Email Inbox</h3>
             <p>Organizing my email inbox.</p>
@@ -67,5 +69,37 @@
     <footer>
         <p>&copy; 2023, Hryhorii Bavykin</p>
     </footer>
+
+    <div class="overlay">
+    <img class="enlarged-image" src="" alt="Enlarged Image">
+    </div>
+
+    <!-- JavaScript code for image enlargement -->
+<script>
+    // JavaScript to handle image click event
+    const images = document.querySelectorAll('.small-image');
+    const overlay = document.querySelector('.overlay');
+    const enlargedImage = document.querySelector('.enlarged-image');
+
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            // Set the clicked image as the source of the enlarged image
+            enlargedImage.src = image.src;
+
+            // Show the overlay and enlarged image
+            if (enlargedImage.src !== "") {
+                overlay.style.display = 'flex'; 
+            }
+        });
+    });
+
+    // Close the enlarged image when clicking on the overlay
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.style.display = 'none';
+        }
+    });
+</script>
+
 </body>
 </html>

@@ -64,3 +64,66 @@ footer {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
+
+/* CSS for the "About Me" section */
+#about-me {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+#about-me h2 {
+    color: #35424a;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-image {
+    flex: 1;
+    padding-right: 10px; /* Add spacing between image and text */
+}
+
+.about-me-image img {
+    max-width: 100%; /* Maintain aspect ratio */
+    width: 90%; /* Set the width to 50% (adjust as needed) */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.about-me-text {
+    flex: 2;
+}
+
+/* You can add additional styling for the "About Me" section here */
+
+
+/* You can add additional styling for the "About Me" section here */
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Half-transparent black background */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.enlarged-image {
+    max-width: 80%;
+    max-height: 80%;
+    border: 2px #e8491d solid; /* Add a white frame */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
+
+.overlay {
+        display: none;
+}
