@@ -1,72 +1,64 @@
-/* Reset some default browser styles for consistency */
-body, h1, h2, p, ul {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-/* Set a background color and text color for the entire page */
-body {
     background-color: #f4f4f4;
-    color: #333;
-    font-family: Arial, sans-serif;
-    padding: 0 20px; /* Adjust the padding as needed */
 }
 
-/* Style the header section */
 header {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+    background-color: #35424a;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
 }
 
-/* Style the about me section */
-#about-me {
-    background-color: #fff;
-    padding: 20px;
+header h1 {
+    margin: 0;
+    padding-bottom: 10px;
 }
 
-/* Style the sections with headings */
-h2 {
-    color: #007bff;
-    margin-bottom: 10px;
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
-/* Style the unordered lists */
-ul {
-    list-style: disc;
-    margin-left: 20px;
+nav ul li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
 }
 
-/* Style the footer */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #e8491d;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+section h2 {
+    color: #35424a;
+}
+
+section p {
+    line-height: 1.6em;
+}
+
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 10px;
+    padding-top: 30px;
 }
 
-/* Add some spacing and borders to list items */
-li {
-    margin: 5px 0;
-    padding-left: 10px;
-    border-left: 2px solid #007bff;
+.assignment .small-image {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
-
-/* Add a hover effect to list items */
-li:hover {
-    background-color: #f4f4f4;
-}
-
-/* Add this to your style.css file */
-.small-image {
-    max-width: calc(30% - 10px); /* Make each image one-third of the available space minus margin */
-    height: auto;                   /* Maintain image aspect ratio */
-    display: inline-block;          /* Display images inline */
-    margin: 10px;                   /* Add some spacing between images */
-    box-sizing: border-box;         /* Include margin in the image width calculation */
-    border: 2px solid #000;         /* Add a 2px solid black border around the images */
-}
-
-
-
