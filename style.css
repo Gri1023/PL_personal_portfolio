@@ -1,3 +1,4 @@
+/* Global styles for the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,13 +6,13 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header styles */
 header {
     background-color: #35424a;
     color: white;
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
-
     text-align: center;
 }
 
@@ -20,6 +21,7 @@ header h1 {
     padding-bottom: 10px;
 }
 
+/* Navigation styles */
 nav ul {
     padding: 0;
     margin: 0;
@@ -40,6 +42,7 @@ nav ul li a:hover {
     color: #e8491d;
 }
 
+/* Global styles for sections */
 section {
     width: 70%;
     margin: auto;
@@ -54,26 +57,27 @@ section p {
     line-height: 1.6em;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
     padding-top: 30px;
 }
 
+/* Styles for image assignments in .assignment elements */
 .assignment .small-image {
     width: 200px;
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* CSS for the "About Me" section */
 #about-me {
-    width: 70%;
-    margin: auto;
-    padding-top: 30px;
+    /* Your styles for the About Me section */
 }
 
 #about-me h2 {
-    color: #35424a;
+    /* Your styles for the About Me section heading */
 }
 
 .about-me-content {
@@ -88,21 +92,17 @@ footer {
 
 .about-me-image img {
     max-width: 100%; /* Maintain aspect ratio */
-    width: 90%; /* Set the width to 50% (adjust as needed) */
+    width: 90%; /* Set the width to 90% (adjust as needed) */
     height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 
 .about-me-text {
     flex: 2;
 }
 
-/* You can add additional styling for the "About Me" section here */
-
-
-/* You can add additional styling for the "About Me" section here */
-
-
+/* CSS for the overlay used for image enlargement */
 .overlay {
     display: none;
     position: fixed;
@@ -114,16 +114,11 @@ footer {
     z-index: 9999;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
 .enlarged-image {
     max-width: 80%;
     max-height: 80%;
-    border: 2px #e8491d solid; /* Add a white frame */
+    border: 2px #e8491d solid; /* Add a frame */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
-}
-
-.overlay {
-        display: none;
 }
