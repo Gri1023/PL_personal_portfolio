@@ -77,19 +77,10 @@ footer {
 }
 
 .enlarged-image {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 95%;
+    max-height: 95%;
     border: 2px #e8491d solid; /* Add a frame */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.d5); /* Add a shadow effect */
-}
-
-/* CSS for the "About Me" section */
-#about-me {
-    /* Your styles for the About Me section */
-}
-
-#about-me h2 {
-    /* Your styles for the About Me section heading */
 }
 
 .about-me-content {
