@@ -8,12 +8,17 @@ body {
 
 /* Header styles */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #35424a;
     color: white;
-    padding-top: 30px;
+    padding-top: 5px;
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
     text-align: center;
+    z-index: 1000; /* Ensure it stays above other elements */
 }
 
 header h1 {
@@ -63,12 +68,19 @@ footer {
     padding-top: 30px;
 }
 
-/* Styles for image assignments in .assignment elements */
-.assignment .small-image {
-    width: 200px;
+/* Styles for image */
+.small-image {
+    width: 225px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.enlarged-image {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px #e8491d solid; /* Add a frame */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.d5); /* Add a shadow effect */
 }
 
 /* CSS for the "About Me" section */
@@ -114,11 +126,4 @@ footer {
     z-index: 9999;
     justify-content: center;
     align-items: center;
-}
-
-.enlarged-image {
-    max-width: 90%;
-    max-height: 90%;
-    border: 2px #e8491d solid; /* Add a frame */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
 }
