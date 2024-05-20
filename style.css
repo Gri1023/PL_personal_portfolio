@@ -54,6 +54,10 @@ section {
     padding-top: 30px;
 }
 
+.sections-container {
+    margin-top: 20px; /* Add margin to the top of the sections */
+}
+
 section h2 {
     color: #35424a;
 }
@@ -82,7 +86,9 @@ footer {
     border: 2px #e8491d solid; /* Add a frame */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.d5); /* Add a shadow effect */
 }
-
+#about-me {
+    margin-top: 100px; /* Adjust this value as needed */
+}
 .about-me-content {
     display: flex;
     align-items: center;
